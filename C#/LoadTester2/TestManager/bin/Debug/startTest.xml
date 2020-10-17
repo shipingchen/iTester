@@ -1,0 +1,9 @@
+<Config name="test2" type="startTest" note="TPCC">
+   <Catelog name="LoadTest" type="test" note="Testing paraments">
+      <Item name="TestingParaments"    		type="test" note="app">
+         <Property name="workDir"       		value="D:\User\shiping\project\TPCC\LoadTester2\LoadTester\bin\Debug"   note="clients" />
+         <Property name="testFileName"  		value="LoadTester"   note="exe" />
+         <Property name="testConfigFileName"  	value="TPCCTest.xml" note="xml" />
+      </Item>
+   </Catelog>
+</Config>

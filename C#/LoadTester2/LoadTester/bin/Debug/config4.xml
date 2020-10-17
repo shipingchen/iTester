@@ -1,0 +1,20 @@
+<Config name="LoadTest" note="ATMClientTest">
+   <Catelog name="LoadTest" type="test" note="Testing paraments">
+      <Item name="TestingParaments"    type="test" note="app">
+         <Property name="numClients"   value="1000"   note="clients" />
+         <Property name="testTime"     value="5"   note="sec" />
+         <Property name="warmupRate"   value="0.2"  note="10% of testTime" />
+         <Property name="cooldownRate" value="0.1"  note="10% of testTime" />
+         <Property name="testAssemblyName" value="ATMclient"  note="string" />
+         <Property name="testAssemblyTypeName"	value="ATM.ATMclient"  note="string" />
+         <Property name="logDirName"   value="C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\LoadTester\log"   note="path" />
+         <Property name="numLogs"      value="4" note="for 4 transactions" />
+         <Property name="disUnit"      value="50" note="msec" />
+      </Item>
+   </Catelog>
+   <Catelog name="Log" type="test" note="Testing paraments">
+      <Item name="ATMClientTest" type="anyType" note="app">
+         <Property name="log1"   value="1" note="coment" />
+      </Item>
+   </Catelog>
+</Config>

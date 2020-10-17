@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<project name="JavaProf" default="compile" >
+<description>
+iTester: Java, version 1.0 by David Ma
+</description>
+  <!--- **** set enviroment **** -->
+   <property name="build.sysclasspath" value="last" />
+   <property name="compile.classpath" value="" />
+   <property name="build.dir" value="build/classes"/>
+   <property name="com.dir" value="src/com"/>
+   <property name="url.list" value="url.txt" />
+  
+  <!-- **** clean/remove all class files **** -->   
+  <target name="clean">
+    <delete dir="${build.dir}" />
+	<mkdir dir="${build.dir}" />
+	<mkdir dir="${build.dir}/logs" />
+	<mkdir dir="${build.dir}/com" />
+  </target>
+  
+  <!-- **** compile java files **** -->   
+  <target name="compile" depends="clean">
+  	<copy file="${basedir}/data/url.txt" todir="${build.dir}"/>
+	<copy file="${basedir}/data/list.txt" todir="${build.dir}"/>
+	    <copy todir="${build.dir}/com">
+        <fileset dir="${com.dir}"/>
+    </copy> 
+    <javac srcdir="src" destdir="${build.dir}" classpath="${compile.classpath}"/>
+  </target>
+
+  <!-- **** to run the http test **** -->   
+  <target name="http">
+      <java dir="${build.dir}"
+            fork="yes" 
+            failOnError="true"
+            className="Tester">
+       <arg value="${basedir}/prop/http.prop"/>
+	 <classpath>
+            <pathelement path="${build.dir}" />
+	 </classpath>
+      </java>
+  </target>
+  
+ <!-- **** to run the yahoo test **** -->   
+ <target name="yahoo">
+      <java dir="${build.dir}"
+            fork="yes" 
+            failOnError="true"
+            className="Tester">
+       <arg value="${basedir}/prop/yahoo.prop"/>
+	 <classpath>
+            <pathelement path="${build.dir}" />
+	 </classpath>
+      </java>
+ </target>
+  
+ <!-- **** to run the helloworld test **** -->   
+ <target name="helloworld">
+      <java dir="${build.dir}"
+            fork="yes" 
+            failOnError="true"
+            className="Tester">
+       <arg value="${basedir}/prop/helloworld.prop"/>
+	 <classpath>
+            <pathelement path="${build.dir}" />
+	 </classpath>
+      </java>
+ </target>
+
+</project>
+		

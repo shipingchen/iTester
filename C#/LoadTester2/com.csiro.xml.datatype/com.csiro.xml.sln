@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.csiro.xml.datatype", "com.csiro.xml.datatype.csproj", "{60402BB0-AB62-4C73-994B-E0661F504DEE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{60402BB0-AB62-4C73-994B-E0661F504DEE}.Debug.ActiveCfg = Debug|.NET
+		{60402BB0-AB62-4C73-994B-E0661F504DEE}.Debug.Build.0 = Debug|.NET
+		{60402BB0-AB62-4C73-994B-E0661F504DEE}.Release.ActiveCfg = Release|.NET
+		{60402BB0-AB62-4C73-994B-E0661F504DEE}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

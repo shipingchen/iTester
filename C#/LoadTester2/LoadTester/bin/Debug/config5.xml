@@ -1,0 +1,20 @@
+<Config name="LoadTest" note="HTTPResponse">
+   <Catelog name="LoadTest" type="test" note="Testing paraments">
+      <Item name="TestingParaments"    type="test" note="app">
+         <Property name="numClients"   value="20"   note="clients" />
+         <Property name="testTime"     value="10"   note="sec" />
+         <Property name="warmupRate"   value="0.2"  note="10% of testTime" />
+         <Property name="cooldownRate" value="0.1"  note="10% of testTime" />
+         <Property name="testAssemblyName" value="WebFetch"  note="string" />
+         <Property name="testAssemblyTypeName"	value="HTTPResponse.WebFetch"  note="string" />
+         <Property name="logDirName"   value="C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\LoadTester\log"   note="path" />
+         <Property name="numLogs"      value="4" note="for 4 transactions" />
+         <Property name="disUnit"      value="50" note="msec" />
+      </Item>
+   </Catelog>
+   <Catelog name="Log" type="test" note="Testing paraments">
+      <Item name="HTTPResponse_20_10" type="HTTPResponseTest" note="app">
+         <Property name="log1"   value="1" note="coment" />
+      </Item>
+   </Catelog>
+</Config>

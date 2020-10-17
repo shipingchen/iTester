@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="LoadTester2">
+</Property><Property Name="Solution File" Value="C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\LoadTester2.sln">
+</Property><Property Name="Date" Value="Sunday, 5 October 2008">
+</Property><Property Name="Time" Value="21:44 PM">
+</Property></Properties><Event ErrorLevel="0" Project="Interfaces" Source="Interfaces\Interfaces.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Interfaces" Source="Interfaces\Interfaces.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="com.csiro.xml.datatype" Source="com.csiro.xml.datatype\com.csiro.xml.datatype.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="com.csiro.xml.datatype" Source="com.csiro.xml.datatype\com.csiro.xml.datatype.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SimpleTestRun" Source="SimpleTestRun\SimpleTestRun.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SimpleTestRun" Source="SimpleTestRun\SimpleTestRun.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LoadTester" Source="LoadTester\LoadTester.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="LoadTester" Source="LoadTester\LoadTester.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="com.csiro.cs.util" Source="com.csiro.cs.util\com.csiro.cs.util.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="com.csiro.cs.util" Source="com.csiro.cs.util\com.csiro.cs.util.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TestRobot" Source="TestRobot\TestRobot.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TestRobot" Source="TestRobot\TestRobot.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TestManager" Source="TestManager\TestManager.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TestManager" Source="TestManager\TestManager.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="LoadTester2.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="LoadTester2.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Interfaces" Source="Interfaces\Interfaces.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="com.csiro.xml.datatype" Source="com.csiro.xml.datatype\com.csiro.xml.datatype.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SimpleTestRun" Source="SimpleTestRun\SimpleTestRun.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="LoadTester" Source="LoadTester\LoadTester.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="com.csiro.cs.util" Source="com.csiro.cs.util\com.csiro.cs.util.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TestRobot" Source="TestRobot\TestRobot.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TestManager" Source="TestManager\TestManager.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

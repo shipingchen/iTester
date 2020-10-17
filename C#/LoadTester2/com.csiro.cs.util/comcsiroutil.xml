@@ -1,0 +1,417 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>comcsiroutil</name>
+    </assembly>
+    <members>
+        <member name="T:com.csiro.cs.util.Coordinator">
+            <summary>
+            This class is to synchronise the activites between client-threads.
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.Coordinator.#ctor(System.Int32)">
+            <summary>
+            constructor
+            </summary>
+            <param name="numClients">The amount of clients tobe coordinated</param>
+        </member>
+        <member name="M:com.csiro.cs.util.Coordinator.inc">
+            <summary>
+            increase the counter threads-safely 
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.Coordinator.isReady">
+            <summary>
+            if all the clients are ready
+            </summary>
+            <returns>When all the clients are ready return true; otherwise false</returns>
+        </member>
+        <member name="T:com.csiro.cs.util.HighResolutionTimer">
+            <summary>
+            This is a c# wraper for a highe resolution timer 
+            </summary>
+        </member>
+        <member name="T:com.csiro.cs.util.Timer">
+            <summary>
+            A timer interface to provide the basic timing functions:
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.Timer.start">
+            <summary>
+            start the timer
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.Timer.stop">
+            <summary>
+            stop the timer
+            </summary>
+            <returns>return the time span between start and stop, in ms</returns>
+        </member>
+        <member name="M:com.csiro.cs.util.Timer.isTime">
+            <summary>
+            if the pre-defined time is reached
+            </summary>
+            <returns>if the time is reached, return true</returns>
+        </member>
+        <member name="M:com.csiro.cs.util.HighResolutionTimer.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.HighResolutionTimer.#ctor(System.UInt64)">
+            <summary>
+            constructor
+            </summary>
+            <param name="t">The alarm time, in millisecond</param>
+        </member>
+        <member name="M:com.csiro.cs.util.HighResolutionTimer.getResolution">
+            <summary>
+            get the resolution of this timer
+            </summary>
+            <returns>the resolution</returns>
+        </member>
+        <member name="M:com.csiro.cs.util.HighResolutionTimer.isHighResolutionTimer">
+            <summary>
+            if the current timer is a high-resolution timer
+            </summary>
+            <returns>return true if the current timer is a high-resolution timer; otherwise false</returns>
+        </member>
+        <member name="M:com.csiro.cs.util.HighResolutionTimer.getSuperHRInterval">
+            <summary>
+            get high-resolution interval
+            </summary>
+            <returns>the high-resolution interval, in millisecond</returns>
+        </member>
+        <member name="M:com.csiro.cs.util.HighResolutionTimer.start">
+            <summary>
+            implementation of interface Timer 
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.HighResolutionTimer.stop">
+            <summary>
+            stop the current timer
+            </summary>
+            <returns>the intervals from start to stop</returns>
+        </member>
+        <member name="M:com.csiro.cs.util.HighResolutionTimer.isTime">
+            <summary>
+             if it is time to stop
+            </summary>
+            <returns>When it is time to stop return true; otherwise return false</returns>
+        </member>
+        <member name="T:com.csiro.cs.util.ResultLog">
+            <summary>
+            High resolution log class for logging testing results
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.#ctor">
+            <summary>
+            the default constructor is for xml serialization
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.#ctor(System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="name">the name of this result</param>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.#ctor(System.String,System.Double,System.Double)">
+            <summary>
+            constructor
+            </summary>
+            <param name="name">the name of this result</param>
+            <param name="bucketSize">the size of each counter bucket</param>
+            <param name="startCaptureValue">The minimal value of counter buckets</param>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.#ctor(System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            constructor
+            </summary>
+            <param name="name">the name of this result</param>
+            <param name="bucketSize">the size of each counter bucket</param>
+            <param name="startCaptureValue">The minimal value of counter buckets</param>
+            <param name="maxCaptureValue">The maximal value of counter buckets</param>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.#ctor(System.String,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            constructor
+            </summary>
+            <param name="name">the name of this result</param>
+            <param name="bucketSize">the size of each counter bucket</param>
+            <param name="startCaptureValue">The minimal value of counter buckets</param>
+            <param name="maxCaptureValue">The maximal value of counter buckets</param>
+            <param name="bucketNumber">the amount of buckets to show off</param>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.add(System.Double)">
+            <summary>
+            add a value into this log
+            This method IS thread-safe, don't worry :-)
+            </summary>
+            <param name="value1">one sample to add to the current resultlog</param>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.add(com.csiro.cs.util.ResultLog)">
+            <summary>
+            add a whole resultlog into this one
+            This method IS thread-safe, don't worry :-)
+            </summary>
+            <param name="rlog"></param>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.add(com.csiro.cs.util.ResultLog[])">
+            <summary>
+            add a whole array of resultlogs into this one
+            This method IS thread-safe
+            </summary>
+            <param name="rlogs">An array of resultlogs</param>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.getAve">
+            <summary>
+            get average value of all samples
+            </summary>
+            <returns>average value of all samples</returns>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.getTotal">
+            <summary>
+            get the sum of total samples
+            </summary>
+            <returns>the sum of total samples</returns>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.getCounter">
+            <summary>
+            the amount of samples
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.getMax">
+            <summary>
+            the max value of samples
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.getMin">
+            <summary>
+            the minimal value of samples
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.printSetting">
+            <summary>
+            print settings to the console
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.printSetting(System.IO.TextWriter)">
+            <summary>
+            print settings to a textwriter
+            </summary>
+            <param name="writer">The destination to print</param>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.printResult(System.IO.TextWriter,System.Boolean,System.Boolean)">
+            <summary>
+            print the result to a textwriter
+            </summary>
+            <param name="writer">The destination to print</param>
+            <param name="bPrintDistrib">if true, print the distribution of result</param>
+            <param name="bPrintAllNonZero">if print all the non-zero result
+            if (bPrintAllNonZero is true) print all non-zero distribution;
+            if (bPrintAllNonZero is false) only top DistributionCount(default is 50) fullest distribution printed out </param>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.printResult(System.Boolean)">
+            <summary>
+            print out the result to the console
+            only top DistributionCount(default is 50) fullest distribution printed out
+            </summary>
+            <param name="bPrintDistrib">if true, print the distribution of result</param>
+        </member>
+        <member name="M:com.csiro.cs.util.ResultLog.printDistribution">
+            <summary>
+            print the result to the console
+            only top DistributionCount(default is 50) fullest distribution printed out 
+            </summary>
+        </member>
+        <member name="T:com.csiro.cs.util.PreRunStruct">
+            <summary>
+            the structure for one PreRun information
+            </summary>
+        </member>
+        <member name="F:com.csiro.cs.util.PreRunStruct.AssemblyStr">
+            <summary>
+            the assemly name
+            </summary>
+        </member>
+        <member name="F:com.csiro.cs.util.PreRunStruct.TypeStr">
+            <summary>
+            the full type name
+            </summary>
+        </member>
+        <member name="F:com.csiro.cs.util.PreRunStruct.InfoStr">
+            <summary>
+            the information to initialize the RreRun object
+            </summary>
+        </member>
+        <member name="T:com.csiro.cs.util.Property">
+            <summary>
+            the class to hold a name-value pair
+            </summary>
+        </member>
+        <member name="F:com.csiro.cs.util.Property.Name">
+            <summary>
+            the name of the name-value pair
+            </summary>
+        </member>
+        <member name="F:com.csiro.cs.util.Property.Value">
+            <summary>
+            the value of the name-value pair
+            </summary>
+        </member>
+        <member name="T:com.csiro.cs.util.TesterProperty">
+            <summary>
+            Summary description for TestProperty.
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.TesterProperty.#ctor">
+            <summary>
+            constructor
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.TesterProperty.#ctor(com.csiro.cs.util.TesterProperty)">
+            <summary>
+            constructor
+            </summary>
+            <param name="property">a source property</param>
+        </member>
+        <member name="F:com.csiro.cs.util.TesterProperty.PropertyItems">
+            <summary>
+            custom properties
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.TesterProperty.GetProperties">
+            <summary>
+            Get all the properties
+            </summary>
+            <returns>all the properties</returns>
+        </member>
+        <member name="M:com.csiro.cs.util.TesterProperty.print">
+            <summary>
+            print the testing message to console
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.TesterProperty.print(System.IO.TextWriter)">
+            <summary>
+            print the testing message to a text writer
+            </summary>
+            <param name="writer">the text writer to print the testing message</param>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.WarmUp">
+             <summary>
+            the percentage of warm-up time 
+             </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.CoolingDown">
+            <summary>
+            the percentage of cooling-down time
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.PreRunInfo">
+            <summary>
+            infomation to do preparing work before running test
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.ResultValueArrayLength">
+            <summary>
+            The length of the result-value array
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.Description">
+            <summary>
+            the Description of this test
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.numClients">
+            <summary>
+            the amount of clients
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.runTime">
+            <summary>
+            in millisecond
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.rtDistributionUnit">
+            <summary>
+            the size of DistributionUnit
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.startDistributionValue">
+            <summary>
+            the minimal value of DistributionUnit
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.runningAssembly">
+            <summary>
+             the name of testee assembly
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.runningType">
+            <summary>
+            the name of testee type
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.showDistributionCount">
+            <summary>
+            how many Distribution Units to show
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.maxDistributionValue">
+            <summary>
+            max value of Distribution unit
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.initString">
+            <summary>
+            The init string
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.logFile">
+            <summary>
+            the name of testing log file 
+            </summary>
+        </member>
+        <member name="P:com.csiro.cs.util.TesterProperty.WaitTime">
+            <summary>
+            How much time to run next testing? in milliseconds
+            </summary>
+        </member>
+        <member name="T:com.csiro.cs.util.NormalTimer">
+            <summary>
+            a Timer implementation with default resolution (20ms) 
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.NormalTimer.#ctor">
+            <summary>
+            constructor for a normal timer
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.NormalTimer.#ctor(System.UInt64)">
+            <summary>
+            constructor for an alarm timer
+            </summary>
+            <param name="t">the setting time of alarm timer</param>
+        </member>
+        <member name="M:com.csiro.cs.util.NormalTimer.start">
+            <summary>
+            implementation of interface Timer
+            </summary>
+        </member>
+        <member name="M:com.csiro.cs.util.NormalTimer.stop">
+            <summary>
+            stop the timer
+            </summary>
+            <returns>the interval from the start to stop</returns>
+        </member>
+        <member name="M:com.csiro.cs.util.NormalTimer.isTime">
+            <summary>
+            if it is time to stop
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,8 @@
+<Config name="test4" type="getTestResult" note="TPCC">
+   <Catelog name="LoadTest" type="cmd" note="cmd">
+      <Item name="xcopy" type="cmd" note="app">
+         <Property name="srcPath"   value="D:\User\shiping\Test\CS\LoadTester2\LoadTester\log\*.*"  note="local test results dir" />
+         <Property name="disPath"   value="D:\User\shiping\Test\CS\LoadTester2\LoadTester\logCopy\" note="global test result dir" />
+      </Item>
+   </Catelog>
+</Config>

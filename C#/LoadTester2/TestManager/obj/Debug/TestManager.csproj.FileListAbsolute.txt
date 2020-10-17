@@ -1,0 +1,11 @@
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\TestManager\bin\Debug\TestManager.exe
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\TestManager\bin\Debug\TestManager.pdb
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\TestManager\bin\Debug\com.csiro.xml.datatype.dll
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\TestManager\bin\Debug\comcsiroutil.dll
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\TestManager\bin\Debug\Interfaces.dll
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\TestManager\bin\Debug\com.csiro.xml.datatype.pdb
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\TestManager\bin\Debug\Interfaces.pdb
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\TestManager\bin\Debug\comcsiroutil.pdb
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\TestManager\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\TestManager\obj\Debug\TestManager.exe
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\TestManager\obj\Debug\TestManager.pdb

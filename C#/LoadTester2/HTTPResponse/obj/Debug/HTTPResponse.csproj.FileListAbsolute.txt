@@ -1,0 +1,14 @@
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\ClassLibrary1\bin\Debug\WebFetch.dll
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\ClassLibrary1\bin\Debug\WebFetch.pdb
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\ClassLibrary1\obj\Debug\WebFetch.dll
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\ClassLibrary1\obj\Debug\WebFetch.pdb
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\HTTPResponse\bin\Debug\WebFetch.dll
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\HTTPResponse\bin\Debug\WebFetch.pdb
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\HTTPResponse\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\HTTPResponse\obj\Debug\WebFetch.dll
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\HTTPResponse\obj\Debug\WebFetch.pdb
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\HTTPResponse\bin\Debug\com.csiro.xml.datatype.dll
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\HTTPResponse\bin\Debug\Interfaces.dll
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\HTTPResponse\bin\Debug\Interfaces.pdb
+C:\Users\Lenny\Desktop\ELEC4707\LoadTester2\LoadTester2\HTTPResponse\bin\Debug\com.csiro.xml.datatype.pdb

@@ -1,0 +1,5 @@
+Response Time (in msec) 	 Average 	 90th 	 Max
+newOrder	0	5015	0
+payment	0	5015	0
+checkOrder	0	5015	0
+checkStock	0	5015	0

@@ -1,0 +1,19 @@
+Change Log by David Ma - 
+
+-----------YahooTester v1.01  10/9/08
+
++Fixed compatability with new randomline class
++Added boolean option to print details
+
+-----------Randomline.java v1.01 10/09/08
+
++Added feature to pick which file to get randomline from
+
+-----------HttpTester.java v1.0 11/09/08
+
++Put all the code in the actual class
++Added boolean option to output the stream
+
+-----------MISC
+
++Fixed the build.xml to now do a clean delete/make/compile/run everytime.

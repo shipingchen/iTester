@@ -1,0 +1,20 @@
+#
+# This file contains all configuration parameters for the test
+#
+# Usage: while you can NOT change property names on the lift hand,
+#        you can update the property values on the righ hand for your specific test 
+#
+testName=Http
+testClassName=HttpTester
+testThreadNmuber=2
+testRuntime=10000
+
+# how much precentage of testRuntime for warmup and cooldown
+testWarmup=5
+testCooldown=5
+
+
+
+
+
+

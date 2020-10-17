@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 U (http://www.xmlspy.com) by Shiping Chen (CSIRO) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ato="http://www.ict.csiro.au" targetNamespace="http://www.ict.csiro.au" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Address">
+		<xs:annotation>
+			<xs:documentation>This is a typical schema for Australia home address. For simplicity, we consider only home address in this prototype. </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Street" type="xs:string"/>
+				<xs:element name="Suburb" type="xs:string"/>
+				<xs:element name="State" type="xs:string"/>
+				<xs:element name="Postcode" type="xs:string"/>
+				<xs:element name="Country" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Apply when the taxpayer lives overseas.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

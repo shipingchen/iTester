@@ -1,0 +1,16 @@
+<Config name="startTest" type="startTest" note="TPCC">
+   <Catelog name="LoadTest" type="test" note="Testing paraments">
+      <Item name="TestingParaments"    type="test" note="app">
+         <Property name="numClients"   value="3"   note="clients" />
+         <Property name="testTime"     value="60"   note="sec" />
+         <Property name="warmupRate"   value="0.2"  note="10% of testTime" />
+         <Property name="cooldownRate" value="0.1"  note="10% of testTime" />
+         <Property name="testAssemblyName"		value="SimpleTestRun"      note="string" />
+         <Property name="testAssemblyTypeName"	value="SimpleTestRun.TestRun"  note="string" />
+
+         <Property name="logDirName"   value="D:\User\shiping\Test\CS\LoadTester2\LoadTester\log"   note="path" />
+         <Property name="numLogs"      value="4" note="for 4 transactions" />
+         <Property name="disUnit"      value="50" note="msec" />
+      </Item>
+   </Catelog>
+</Config>

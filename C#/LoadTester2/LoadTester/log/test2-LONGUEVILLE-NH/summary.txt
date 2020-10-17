@@ -1,0 +1,5 @@
+Response Time (in msec) 	 Average 	 90th 	 Max
+newOrder	32.8571428571429	45	77
+payment	24	55	61
+checkOrder	6	5	15
+checkStock	4.36363636363636	5	7
